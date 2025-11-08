@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gedächtnisgesundheit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <span class="menu-text">MENÜ</span>
+            <h1 class="logo">Gesundheit</h1>
+            <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                <span>SUCHEN</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container content">
+            <p class="breadcrumb">Das deutsche Geheimnis für einen scharfen Verstand:</p>
+            <h2 class="main-headline">Wie ich den "Gehirnnebel" loswurde und mein Gedächtnis wiedererlangte – ohne teure Medikamente!</h2>
+
+            <p class="intro-text">
+                Wenn Sie jemals die Frustration erlebt haben, Namen zu vergessen, den Faden im Gespräch zu verlieren oder sich bei einfachen Aufgaben verwirrt zu fühlen, dann wissen Sie, wovon ich spreche. Ich habe das selbst durchgemacht und dachte, es sei nur "eine Alterserscheinung", aber ich entdeckte, dass die wahre Ursache ein "stilles Gift" ist, das 9 von 10 Menschen betrifft.
+            </p>
+            <p class="intro-text">
+                Nachdem ich ein Vermögen für Nahrungsergänzungsmittel und Gehirnjogging-Spiele ausgegeben hatte, die nicht funktionierten, fand ich eine natürliche Methode, die von einem deutschen Neurochirurgen aufgedeckt wurde. Sie verwendet einfache Zutaten, um die geistige Klarheit wiederherzustellen. Eine Lösung, von der die Pharmaindustrie nicht will, dass Sie sie kennen.
+            </p>
+
+            <p class="author-info">
+                Von <strong>Dr. Otto Fischer</strong><br>
+                <span id="current-date"></span> - Aktualisiert vor 2 Stunden
+            </p>
+
+            <div class="social-share">
+                <a href="#" class="facebook-share"></a>
+                <a href="#" class="whatsapp-share"></a>
+            </div>
+            
+            <div class="quote-box">
+                <h3>Dr. Otto Fischer erklärt:</h3>
+                <blockquote>
+                    "Gedächtnisverlust nach dem 40. Lebensjahr ist nicht normal. Er wird durch ein Toxin verursacht, das sich im Gehirn ansammelt und die Neurotransmitter blockiert. Herkömmliche Medikamente überdecken nur die Symptome, ohne die Wurzel des Problems anzugehen."
+                </blockquote>
+                <blockquote>
+                    "Unsere Forschung hat eine natürliche Methode mit einer speziellen Honigsorte und zwei weiteren Zutaten aufgedeckt, die dieses Toxin beseitigt. In Tests mit 2.100 Freiwilligen sahen 97 % innerhalb weniger Wochen signifikante Verbesserungen bei Gedächtnis und Konzentration."
+                </blockquote>
+            </div>
+
+            <div class="video-section">
+                <a href="https://IHR-AFFILIATE-LINK-HIER" class="video-thumbnail">
+                    <!-- Ersetzen Sie dies durch die URL Ihres Video-Thumbnails -->
+                    <img src="https://www.harmoniepure.site/anti/image/THUMB2.gif" alt="Video über die Methode">
+                </a>
+            </div>
+
+            <p class="security-notice">
+                Aus Sicherheitsgründen und um diese Methode vor der großen Pharmaindustrie zu schützen, ist diese Präsentation nur in einem exklusiven Video verfügbar, das am <strong id="offline-date"></strong> offline gehen wird.
+            </p>
+
+            <h3 class="cta-headline">Um das vollständige Video anzusehen, klicken Sie auf die Schaltfläche unten:</h3>
+
+            <div class="cta-button-container">
+                <a href="https://IHR-AFFILIATE-LINK-HIER" class="cta-button">
+                    Klicken Sie hier, um das Video anzusehen
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>ALLE RECHTE VORBEHALTEN</p>
+    </footer>
+
+    <script>
+        const today = new Date();
+        const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+        
+        // Verwenden Sie 'de-DE' für das deutsche Datumsformat (TT.MM.JJJJ)
+        document.getElementById('current-date').innerText = today.toLocaleDateString('de-DE', options);
+        document.getElementById('offline-date').innerText = today.toLocaleDateString('de-DE', options);
+    </script>
+</body>
+</html>
